@@ -1,0 +1,350 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+nav {
+    width: 100vw;
+    margin: 0;
+    z-index: 1;
+}
+
+nav .nav-top{
+    width: 100vw;
+    background-color: rgb(214, 213, 213);
+    margin: 0;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.top-left {
+    justify-content: space-around;
+    padding-left: 3rem;
+}
+
+.nav-top img {
+    width: 20px;
+    height: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    padding-right: 0.5rem;
+}
+
+.top-mid h5{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: rgb(43, 43, 43);
+    margin: 0 auto;
+    padding-top: 1rem;
+    position: relative;
+
+}
+
+.top-right {
+    padding-right: 3rem;
+    padding-top: 1rem;
+}
+
+.top-right input{
+    font-size: 1rem;
+    border: 0px;    
+    border-bottom: 1px solid #888;    
+    background: rgba(0,0,0,0);       
+    border-radius: 0px;
+}
+
+@media only screen and (max-width: 800px) {
+    .top-left, .top-right {
+        display: none;
+    }
+
+    .top-mid {
+        width: 100vw;
+        text-align: center;
+    }
+    
+}
+
+nav .nav-bottom {
+    width: 100%;
+    margin: 0;
+    height: 5rem;
+    background-color: rgb(255, 255, 255);
+    opacity: 95%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+}
+
+.bottom-left{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottom-left a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+
+.logo {
+    width: 6rem;
+    height: auto;
+    padding-left: 2.5rem;
+    padding-top: 1.6rem;
+}
+
+.nosso-ct{
+    width: 20px;
+    height: auto;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-right: 6px;
+}
+
+.bottom-mid img{
+    padding-top: 0.4rem;
+    padding-right: 14rem;
+    height: 4.5rem;
+    width: auto;
+
+}
+
+.bottom-right img{
+    padding-top: 1rem;
+    padding-right: 3rem;
+    width: 10rem;
+    height: auto;
+}
+
+.nav-small {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .bottom-mid, .bottom-right{
+        display: none;
+    }
+
+    .bottom-left {
+        width: 50vw;
+        align-content: center;
+        padding-left: 2rem;
+        padding-top: inherit;
+        width: 4rem;
+        height: auto;
+    }
+
+    .bottom-left a{
+        display: none;
+    }
+
+    .nosso-ct { 
+        display: none;
+    }
+
+    nav .nav-small{
+        display: inherit;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        vertical-align: middle;
+    }
+
+    nav .nav-small a{
+        text-decoration: none;
+        color: inherit;
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        color: rgb(0, 0, 0);
+        vertical-align: middle;
+    }
+
+    
+}
+
+.menu-preto {
+    width: 100vw;
+    margin: 0;
+    height: 3rem;
+    background-color: black;
+    text-align: center;
+    position: relative;
+}
+
+.menu-preto a {
+    margin: 0;
+    padding-top: 0;
+    line-height: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+
+.menu-preto a:hover{
+    cursor: pointer;
+    text-decoration: underline 2px;
+}
+
+@media only screen and (max-width: 500px){
+    .menu-preto {
+        display: none;
+    }
+}
+
+.conteudo {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+#inicio {
+    position: relative;
+    background-image: url(imagens/inicio.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+#fut-masculino {
+    position: relative;
+    background-image: url(imagens/masculino.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#fut-feminino {
+    position: relative;
+    background-image: url(imagens/femininoo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+#comprar-ingressos {
+    position: relative;
+    background-image: url(imagens/sao-januario.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.titulo {
+    padding-left: 4rem;
+    padding-top: 16rem;
+    margin: 0px;
+}
+
+.titulo h1 {
+    font-size: 5rem;
+    line-height: 4.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0px;
+    color: white;
+}
+
+.titulo p {
+    font-size: 1rem;
+    line-height: 0.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+
+}
+
+.botao {
+    position: absolute;
+    min-height: 30px;
+    min-width: 50px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    
+}
+
+.conteudo a:hover .botao{
+    cursor: pointer;
+    background-color: rgb(214, 213, 213);
+    width: 160px;
+    height: 45px;
+    color: black;
+    font-weight: bold;
+}
+
+.footer {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: visible;
+    width: 100%;
+    height: fit-content;
+    bottom: 0px;
+    margin-bottom: 0.7rem;
+    display: flex;
+    align-content: center;
+}
+
+.footer a{
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    text-decoration: underline 1px;
+    color: white;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.footer a:hover {
+    text-decoration: underline 2px;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    footer .footer {
+        width: 100vw;
+        text-align: center;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        text-decoration: underline 1px;
+        color: white;
+        font-weight: 700;
+        font-size: 0.95rem;
+    }
+
+    .footer a {
+        text-align: center;
+        align-content: center;
+    }    
+    footer .footer a:hover {
+        text-decoration: underline 2px;
+        font-size: 1rem;
+    }
+}
